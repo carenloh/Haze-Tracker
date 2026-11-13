@@ -16,30 +16,47 @@
       font-family: system-ui, sans-serif;
     }
     h1 { color: #ffffff; margin: 0 0 1rem; }
-    svg { width: 260px; height: auto; }
+    svg { width: 340px; max-width: 90vw; height: auto; }
   </style>
 </head>
 <body>
   <h1>Hello, Thakral Family!</h1>
-  <svg viewBox="0 0 200 280" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="A pink flower with green stem and leaves">
-    <!-- stem -->
-    <path d="M100 120 C95 170 105 220 100 270" stroke="#3a8a3a" stroke-width="6" fill="none" stroke-linecap="round"/>
-    <!-- leaves -->
-    <path d="M100 210 C70 200 55 180 50 165 C80 165 98 185 100 210 Z" fill="#4caf50"/>
-    <path d="M101 235 C130 225 145 205 150 190 C120 190 103 210 101 235 Z" fill="#43a047"/>
-    <!-- petals -->
-    <g fill="#ff8fb8" stroke="#e5608f" stroke-width="1.5">
-      <ellipse cx="100" cy="58" rx="16" ry="30"/>
-      <ellipse cx="100" cy="58" rx="16" ry="30" transform="rotate(45 100 90)"/>
-      <ellipse cx="100" cy="58" rx="16" ry="30" transform="rotate(90 100 90)"/>
-      <ellipse cx="100" cy="58" rx="16" ry="30" transform="rotate(135 100 90)"/>
-      <ellipse cx="100" cy="58" rx="16" ry="30" transform="rotate(180 100 90)"/>
-      <ellipse cx="100" cy="58" rx="16" ry="30" transform="rotate(225 100 90)"/>
-      <ellipse cx="100" cy="58" rx="16" ry="30" transform="rotate(270 100 90)"/>
-      <ellipse cx="100" cy="58" rx="16" ry="30" transform="rotate(315 100 90)"/>
+  <svg viewBox="0 0 320 240" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="A green dragon breathing fire">
+    <!-- tail -->
+    <path d="M95 160 C60 170 40 150 20 175 C40 165 55 190 90 185 Z" fill="#2e9e4f" stroke="#1b6b32" stroke-width="2"/>
+    <path d="M20 175 L8 160 L28 165 Z" fill="#c62828"/>
+    <!-- back wing -->
+    <path d="M125 120 C110 70 140 35 190 25 C180 55 195 80 175 120 Z" fill="#b71c1c" stroke="#7f0000" stroke-width="2"/>
+    <path d="M150 115 C145 80 160 55 190 25" stroke="#7f0000" stroke-width="2" fill="none"/>
+    <!-- back legs and front legs -->
+    <rect x="105" y="170" width="20" height="40" rx="8" fill="#2e9e4f" stroke="#1b6b32" stroke-width="2"/>
+    <rect x="175" y="170" width="20" height="40" rx="8" fill="#2e9e4f" stroke="#1b6b32" stroke-width="2"/>
+    <path d="M100 210 h30 M170 210 h30" stroke="#f5f5f5" stroke-width="5" stroke-linecap="round"/>
+    <!-- body -->
+    <ellipse cx="150" cy="150" rx="65" ry="40" fill="#3fb865" stroke="#1b6b32" stroke-width="2"/>
+    <ellipse cx="155" cy="165" rx="45" ry="22" fill="#d9f2b0"/>
+    <!-- neck -->
+    <path d="M185 130 C225 120 225 85 215 65 L245 70 C255 100 245 145 205 175 Z" fill="#3fb865" stroke="#1b6b32" stroke-width="2"/>
+    <!-- back spikes -->
+    <g fill="#c62828">
+      <path d="M115 115 l8 -18 l8 20 Z"/>
+      <path d="M140 110 l8 -18 l8 20 Z"/>
+      <path d="M165 112 l8 -18 l8 20 Z"/>
+      <path d="M198 100 l12 -12 l2 18 Z"/>
     </g>
-    <!-- center -->
-    <circle cx="100" cy="90" r="17" fill="#ffd54f" stroke="#f9a825" stroke-width="2"/>
+    <!-- head -->
+    <path d="M215 65 C215 40 245 30 270 45 L300 55 C305 65 290 75 270 78 C255 90 230 85 215 65 Z" fill="#3fb865" stroke="#1b6b32" stroke-width="2"/>
+    <!-- horns -->
+    <path d="M232 40 L222 15 L248 35 Z" fill="#f5e6b8" stroke="#a68b3c" stroke-width="1.5"/>
+    <path d="M250 36 L248 12 L265 38 Z" fill="#f5e6b8" stroke="#a68b3c" stroke-width="1.5"/>
+    <!-- eye, nostril, smile -->
+    <circle cx="255" cy="52" r="6" fill="#fff"/>
+    <circle cx="257" cy="52" r="3" fill="#111"/>
+    <circle cx="293" cy="57" r="2" fill="#1b6b32"/>
+    <path d="M270 70 Q285 72 298 64" stroke="#1b6b32" stroke-width="2" fill="none"/>
+    <!-- fire -->
+    <path d="M302 62 C312 50 318 62 316 68 C320 76 310 82 302 70 Z" fill="#ff9800"/>
+    <path d="M303 64 C309 58 312 66 311 69 C309 73 305 72 303 68 Z" fill="#ffeb3b"/>
   </svg>
 </body>
 </html>
